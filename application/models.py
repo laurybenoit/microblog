@@ -33,6 +33,7 @@ class Post(db.Model):
 
 
 # class User(UserMixin, db.Model):
+
     
 
 @login.user_loader

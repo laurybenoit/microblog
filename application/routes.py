@@ -6,6 +6,7 @@ from application.forms import LoginForm, RegistrationForm
 from application.models import Post, User
 
 
+
 @app.route('/')
 @app.route('/index')
 @login_required
@@ -70,4 +71,3 @@ def user(username):
         {'author': user, 'body': 'Test post #2'}
     ]
     return render_template('user.html', user=user, posts=posts)
-
